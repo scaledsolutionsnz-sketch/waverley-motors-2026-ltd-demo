@@ -8,8 +8,8 @@
 <meta property="og:title" content="Waverley Motors 2026 Ltd | Mechanic & WOF, Invercargill">
 <meta property="og:description" content="Straight-up servicing, WOFs and repairs for Southland drivers. Book Waverley Motors today.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1200&q=70">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b1220'/><text x='50' y='68' font-size='58' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%23d7a03c'>W</text></svg>">
+<meta property="og:image" content="https://waverley-motors-2026-ltd-demo.vercel.app/images/hero.jpg">
+<link rel="icon" type="image/png" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
 <!-- Intro -->
 <div class="intro">
   <div class="intro-logo">
-    <div class="mark">W</div>
+    <img class="intro-logo-img" src="images/logo.png" alt="Waverley Motors">
     <b>Waverley Motors</b>
     <div class="intro-bar"><i></i></div>
   </div>
@@ -29,7 +29,7 @@
 <!-- Nav -->
 <nav class="nav">
   <a href="index.html" class="brand">
-    <span class="mark">W</span>
+    <img class="brand-logo" src="images/logo.png" alt="Waverley Motors logo">
     <span>Waverley Motors<small>INVERCARGILL · EST. SOUTHLAND</small></span>
   </a>
   <div class="nav-links">
@@ -37,11 +37,12 @@
     <a href="#about">About</a>
     <a href="#crew">Our Team</a>
     <a href="#reviews">Reviews</a>
+    <a href="#book">Book Online</a>
     <a href="#contact">Contact</a>
   </div>
   <div class="nav-cta">
     <a href="tel:+6432179425" class="nav-phone">03 217 9425</a>
-    <a href="#contact" class="btn btn--accent">Get a Quote</a>
+    <a href="#book" class="btn btn--accent">Book Online</a>
     <button class="nav-toggle" aria-label="Menu">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
@@ -51,43 +52,35 @@
 <!-- Hero -->
 <header class="hero" id="top">
   <div class="hero-slides">
-    <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1900&q=72')"></div>
-    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1900&q=72')"></div>
-    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=1900&q=72')"></div>
+    <div class="hero-slide active" style="background-image:url('images/hero1.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/hero2.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/hero3.jpg')"></div>
   </div>
   <div class="hero-inner wrap">
     <span class="eyebrow">Invercargill · Mechanical Repairs & WOF</span>
     <h1>Servicing and repairs that keep <span>Southland</span> on the road.</h1>
-    <p class="hero-sub">From the warrant that just failed to the noise you've been ignoring — Waverley Motors gets your car, ute or 4WD sorted properly, and tells you straight what it needs.</p>
+    <p class="hero-sub">From WOF inspections and routine servicing to diagnostics and major repairs, we're here to keep your vehicle safe, reliable and ready for the road.</p>
     <div class="hero-cta">
-      <a href="#contact" class="btn btn--accent btn--lg">Get a Quote</a>
+      <a href="#book" class="btn btn--accent btn--lg">Book Online</a>
       <a href="tel:+6432179425" class="btn btn--ghost btn--lg">Call 03 217 9425</a>
+      <img class="hero-mta" src="images/mta.png" alt="MTA Assured — approved workshop">
     </div>
     <div class="hero-meta">
-      <div><b>WOF</b><span>Inspections while you wait</span></div>
-      <div><b>All makes</b><span>Petrol, diesel &amp; 4WD</span></div>
-      <div><b>Local</b><span>Right here in Invercargill</span></div>
+      <div><b>WOF Inspections</b><span>While you wait (by appointment)</span></div>
+      <div><b>All Makes &amp; Models</b><span>Petrol, Diesel &amp; 4WD</span></div>
+      <div><b>Locally Owned</b><span>Proudly servicing Southland</span></div>
+    </div>
+    <div class="hero-review" id="heroReview" aria-live="polite">
+      <div class="hr-head">
+        <span class="hr-score">4.8</span>
+        <span class="hr-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="hr-count">34 Google reviews</span>
+      </div>
+      <p class="hr-quote" id="hrQuote">"The BEST in Invercargill. Friendly, honest and go the extra mile to help their customer. Fair pricing. Highly recommended!"</p>
+      <div class="hr-name" id="hrName">Gonz Hipo &middot; Google review</div>
     </div>
   </div>
 </header>
-
-<!-- Trust strip -->
-<section class="trust">
-  <div class="wrap trust-grid">
-    <div class="trust-item">
-      <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
-      <div><h4>Invercargill locals</h4><p>Known around Southland — easy to find, easy to deal with.</p></div>
-    </div>
-    <div class="trust-item">
-      <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-      <div><h4>Back on the road fast</h4><p>Most services and WOFs booked in and turned around the same day.</p></div>
-    </div>
-    <div class="trust-item">
-      <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6l7-3Z"/></svg></div>
-      <div><h4>No surprise bills</h4><p>We quote before we start and call you if anything changes.</p></div>
-    </div>
-  </div>
-</section>
 
 <!-- Services -->
 <section class="section section--light" id="services">
@@ -95,38 +88,50 @@
     <div class="section-head reveal">
       <span class="eyebrow">What we do</span>
       <h2>Everything your vehicle needs, under one roof.</h2>
-      <p>A full-service workshop for the everyday cars, work utes and farm 4WDs that keep Southland moving.</p>
+      <p>Trusted local mechanics delivering quality workmanship and reliable service for every vehicle you drive.</p>
     </div>
     <div class="svc-grid">
       <div class="svc-card reveal">
-        <div class="svc-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg></div>
-        <h3>WOF Inspections</h3>
-        <p>Warrant of Fitness checks done thoroughly and honestly. If it fails, we'll tell you exactly what's needed to pass.</p>
+        <div class="svc-media"><img src="images/g5.jpg" alt="Warrant of Fitness sticker on a windscreen at Waverley Motors" loading="lazy"></div>
+        <div class="svc-body">
+          <h3>WOF Inspections</h3>
+          <p>Warrant of Fitness checks done thoroughly and honestly. If it fails, we'll tell you exactly what's needed to pass.</p>
+        </div>
       </div>
       <div class="svc-card reveal">
-        <div class="svc-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-6 6 3 3 6-6a4 4 0 0 0 5.4-5.4l-2.3 2.3-2.1-.6-.6-2.1 2.3-2.3Z"/></svg></div>
-        <h3>Servicing &amp; Tune-ups</h3>
-        <p>Oil, filters, fluids and a full check-over on a schedule that suits your kays — petrol and diesel.</p>
+        <div class="svc-media"><img src="images/g4.jpg" alt="Engine bay work being carried out in the Waverley Motors workshop" loading="lazy"></div>
+        <div class="svc-body">
+          <h3>Vehicle Servicing</h3>
+          <p>Routine servicing to keep your vehicle reliable, efficient and performing at its best.</p>
+        </div>
       </div>
       <div class="svc-card reveal">
-        <div class="svc-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
-        <h3>Brakes &amp; Suspension</h3>
-        <p>Squealing, shuddering or a soft pedal? New pads, discs, shocks and struts fitted and road-tested.</p>
+        <div class="svc-media"><img src="images/g1.jpg" alt="Lifted Toyota Hilux 4WD outside Waverley Motors" loading="lazy"></div>
+        <div class="svc-body">
+          <h3>Brakes &amp; Suspension</h3>
+          <p>Quality brake and suspension repairs to keep your vehicle safe on the road.</p>
+        </div>
       </div>
       <div class="svc-card reveal">
-        <div class="svc-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></div>
-        <h3>Diagnostics &amp; Auto Electrical</h3>
-        <p>Engine light on? We plug in, read the fault properly and fix the cause — not just clear the code.</p>
+        <div class="svc-media"><img src="images/g3.jpg" alt="Classic Ford sedan outside the Waverley Motors workshop" loading="lazy"></div>
+        <div class="svc-body">
+          <h3>Diagnostics &amp; Auto Electrical</h3>
+          <p>Accurate fault diagnosis, auto electrical repairs and installations for all makes and models.</p>
+        </div>
       </div>
       <div class="svc-card reveal">
-        <div class="svc-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div>
-        <h3>Tyres &amp; Wheel Alignment</h3>
-        <p>New tyres, punctures, rotations and four-wheel alignments to stop uneven wear and pulling.</p>
+        <div class="svc-media"><img src="images/onsite.jpg" alt="Classic Ford Falcon in the shed alongside a ute at Waverley Motors" loading="lazy"></div>
+        <div class="svc-body">
+          <h3>On-site Repairs</h3>
+          <p>We can bring the workshop to you, providing convenient on-site servicing and repairs where practical.</p>
+        </div>
       </div>
       <div class="svc-card reveal">
-        <div class="svc-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4"/><circle cx="12" cy="12" r="3"/></svg></div>
-        <h3>Cambelts &amp; Clutches</h3>
-        <p>The bigger jobs done right — timing belts, water pumps and clutch replacements to keep you off the tow truck.</p>
+        <div class="svc-media"><img src="images/g6.jpg" alt="Chevrolet Silverado ute at the Waverley Motors workshop" loading="lazy"></div>
+        <div class="svc-body">
+          <h3>Cambelts &amp; Clutches</h3>
+          <p>The bigger jobs done right — timing belts, water pumps and clutch replacements to keep you off the tow truck.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -137,18 +142,18 @@
   <div class="wrap split">
     <div class="reveal">
       <span class="eyebrow">About the workshop</span>
-      <h2 style="font-size:clamp(2rem,4.2vw,2.9rem);margin:16px 0 18px">A Southland workshop that treats your car like its own.</h2>
-      <p style="color:var(--muted)">Waverley Motors is an Invercargill mechanical workshop looking after the cars, utes and 4WDs that Southland families and tradies rely on. Whether it's a quick warrant or a job that's been putting you off, you'll get a straight answer and work done properly the first time.</p>
-      <p style="color:var(--muted)">No jargon, no upselling — just honest advice on what your vehicle actually needs to be safe and reliable through a Southland winter.</p>
+      <h2 style="font-size:clamp(2rem,4.2vw,2.9rem);margin:16px 0 18px">A workshop you can rely on.</h2>
+      <p style="color:var(--muted)">Waverley Motors is a locally owned and operated workshop in Invercargill, providing quality servicing, repairs and WOF inspections for all vehicle makes and models. Whether it's routine maintenance, a failed WOF or a more complex repair, we'll give you honest advice, clear communication and quality workmanship every step of the way.</p>
+      <p style="color:var(--muted)">No unnecessary upselling, just the right repairs to keep your vehicle safe, reliable and ready for the road.</p>
       <ul class="checklist">
-        <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span> Locally owned and operated in Invercargill</li>
-        <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span> Clear quotes before any work starts</li>
-        <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span> Workmanship you can count on</li>
+        <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span> Experienced, qualified technicians</li>
+        <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span> Honest advice</li>
+        <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span> Quality workmanship you can trust</li>
       </ul>
-      <a href="#contact" class="btn btn--dark">Book your vehicle in</a>
+      <a href="#book" class="btn btn--dark">Book online</a>
     </div>
     <div class="split-media reveal">
-      <img src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1100&q=72" alt="Mechanic working under the bonnet of a car in the Waverley Motors workshop" width="1100" height="825" loading="lazy">
+      <img src="images/about.jpg" alt="Mechanic working under the bonnet of a car in the Waverley Motors workshop" width="1100" height="825" loading="lazy">
       <span class="corner-tag">On the tools since day one</span>
     </div>
   </div>
@@ -191,51 +196,48 @@
   </div>
 </section>
 
-<!-- Gallery -->
-<section class="section section--light">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">In the workshop</span>
-      <h2>A proper set-up for proper work.</h2>
-    </div>
-    <div class="gallery reveal">
-      <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=72" alt="Car raised on a hoist in the workshop" loading="lazy">
-      <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?auto=format&fit=crop&w=800&q=72" alt="Technician working on an engine bay" loading="lazy">
-      <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=72" alt="Close-up of engine components during a service" loading="lazy">
-      <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=72" alt="Vehicle ready to leave the workshop" loading="lazy">
-      <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=800&q=72" alt="Mechanic carrying out repairs" loading="lazy">
-      <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=72" alt="Tools and diagnostic gear on the workshop bench" loading="lazy">
-    </div>
-  </div>
-</section>
-
 <!-- Reviews -->
 <section class="section section--bone" id="reviews">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="badge">Example reviews</span>
+      <span class="badge">&#9733; 4.8 on Google &middot; 34 reviews</span>
       <h2>What Southland drivers say.</h2>
-      <p>A few words from the locals who trust us with their vehicles.</p>
+      <p>Real reviews from the locals who trust us with their vehicles, straight from our Google Business Profile.</p>
     </div>
     <div class="rev-grid">
       <div class="rev-card reveal">
         <div class="stars">★★★★★</div>
-        <p>"Failed my warrant somewhere else and Cole sorted it same day for a fair price. Explained everything without the runaround. Won't take my Hilux anywhere else now."</p>
-        <div class="rev-who"><span class="ini">DM</span><div><b>Dylan M.</b><span>Waikiwi, Invercargill</span></div></div>
+        <p>"I have had a very good experience with them over the last three years. I always take my car there for servicing and other related work. They consistently provide high-quality service and ensure customer satisfaction. Very pleased with their professionalism and excellent service. Thank you Waverley Motors team."</p>
+        <div class="rev-who"><span class="ini">AS</span><div><b>Ankush Saini</b><span>Google review</span></div></div>
       </div>
       <div class="rev-card reveal">
         <div class="stars">★★★★★</div>
-        <p>"Booked in for a service, they spotted a brake issue before it got dangerous and rang me first before doing anything. Honest crew — hard to find these days."</p>
-        <div class="rev-who"><span class="ini">RT</span><div><b>Rachel T.</b><span>Otatara</span></div></div>
+        <p>"Best WOF place in Invercargill. Me and my family have been taking our vehicles here for years and always had good reliable service. Will keep coming here for years to come."</p>
+        <div class="rev-who"><span class="ini">CC</span><div><b>Cameron Corcoran</b><span>Local Guide &middot; Google review</span></div></div>
       </div>
       <div class="rev-card reveal">
         <div class="stars">★★★★★</div>
-        <p>"Quick, tidy and actually cheaper than the quote. Had the family wagon back the same afternoon. Good to have a mechanic in town you can trust."</p>
-        <div class="rev-who"><span class="ini">SW</span><div><b>Sam W.</b><span>Windsor, Invercargill</span></div></div>
+        <p>"The BEST in Invercargill. They are friendly, honest and go the extra mile to help their customer. Fair pricing. Highly recommended!"</p>
+        <div class="rev-who"><span class="ini">GH</span><div><b>Gonz Hipo</b><span>Google review</span></div></div>
+      </div>
+      <div class="rev-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Very awesome garage who tells it like it is and doesn't rip you off. Staff are always helpful and very friendly and welcoming."</p>
+        <div class="rev-who"><span class="ini">ZA</span><div><b>Zivana Marie Anderson</b><span>Local Guide &middot; Google review</span></div></div>
+      </div>
+      <div class="rev-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Great mechanics, very fair prices, and can't forget the great customer service by Bronwyn."</p>
+        <div class="rev-who"><span class="ini">TM</span><div><b>Tim Macdonald</b><span>Local Guide &middot; Google review</span></div></div>
+      </div>
+      <div class="rev-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Great friendly service. You can trust the team here!!"</p>
+        <div class="rev-who"><span class="ini">OJ</span><div><b>Ollie Jackson</b><span>Local Guide &middot; Google review</span></div></div>
       </div>
     </div>
     <div style="text-align:center;margin-top:40px" class="reveal">
-      <a href="review.html" class="btn btn--dark btn--lg">Read &amp; leave reviews</a>
+      <a href="https://www.google.com/search?q=Waverley+Motors+Invercargill+reviews" target="_blank" rel="noopener" class="btn btn--dark btn--lg">Read &amp; leave reviews</a>
     </div>
   </div>
 </section>
@@ -246,7 +248,21 @@
     <div class="stars">★★★★★</div>
     <h2>Happy with our work? Leave us a review.</h2>
     <p>It takes 30 seconds and helps other Southland drivers find an honest workshop. We'd really appreciate it.</p>
-    <a href="review.html" class="btn btn--accent btn--lg">Leave a Review</a>
+    <a href="https://www.google.com/search?q=Waverley+Motors+Invercargill+reviews" target="_blank" rel="noopener" class="btn btn--accent btn--lg">Leave a Review</a>
+  </div>
+</section>
+
+<!-- Book Online -->
+<section class="section section--light" id="book">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Book online</span>
+      <h2>Book your car in, anytime.</h2>
+      <p>Pick a service and a time that suits you — our online booking system goes straight through to the workshop.</p>
+    </div>
+    <div class="book-wrap reveal">
+      <iframe class="book-frame" src="https://www.mechanicdesk.com.au/online-booking/index.html?token=e17a1789c43d6bd2d6bf738fa53d892a822ad86c" title="Waverley Motors online booking" loading="lazy"></iframe>
+    </div>
   </div>
 </section>
 
@@ -264,16 +280,16 @@
         </div>
         <div class="contact-line">
           <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg></div>
-          <div><b>cole@waverlymotors.co.nz</b><span>Email us anytime</span></div>
+          <div><b>office@waverleymotors.co.nz</b><span>Email us anytime</span></div>
         </div>
         <div class="contact-line">
           <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
-          <div><b>Invercargill, Southland</b><span>Serving the wider Southland region</span></div>
+          <div><b>46 Ward Street, Waverley, Invercargill 9810</b><span>Serving the wider Southland region</span></div>
         </div>
       </div>
       <div class="contact-actions">
         <a href="tel:+6432179425" class="btn btn--accent btn--lg">Call Waverley Motors 2026 Ltd</a>
-        <a href="mailto:cole@waverlymotors.co.nz" class="btn btn--ghost btn--lg">Email Waverley Motors 2026 Ltd</a>
+        <a href="mailto:office@waverleymotors.co.nz" class="btn btn--ghost btn--lg">Email Waverley Motors 2026 Ltd</a>
       </div>
     </div>
     <div class="contact-card reveal">
@@ -293,32 +309,37 @@
   </div>
 </section>
 
+<!-- Map -->
+<section class="map-section" id="map" aria-label="Waverley Motors location map">
+  <iframe class="map-frame" src="https://www.google.com/maps?q=46%20Ward%20Street%2C%20Waverley%2C%20Invercargill%209810&output=embed" title="Waverley Motors, 46 Ward Street, Waverley, Invercargill 9810" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
 <!-- Footer -->
 <footer class="footer">
   <div class="wrap">
     <div class="footer-top">
       <div>
-        <a href="index.html" class="brand"><span class="mark">W</span><span>Waverley Motors<small>INVERCARGILL · EST. SOUTHLAND</small></span></a>
+        <a href="index.html" class="brand"><img class="brand-logo" src="images/logo.png" alt="Waverley Motors logo"><span>Waverley Motors<small>INVERCARGILL · EST. SOUTHLAND</small></span></a>
         <p class="footer-blurb">Honest mechanical repairs, WOFs and servicing for Southland drivers. Book your car, ute or 4WD in with a workshop you can trust.</p>
       </div>
       <div>
         <h4>Services</h4>
         <a href="#services">WOF Inspections</a>
-        <a href="#services">Servicing &amp; Tune-ups</a>
+        <a href="#services">Vehicle Servicing</a>
         <a href="#services">Brakes &amp; Suspension</a>
-        <a href="#services">Tyres &amp; Alignment</a>
+        <a href="#services">On-site Repairs</a>
       </div>
       <div>
         <h4>Company</h4>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href="review.html">Leave a Review</a>
+        <a href="https://www.google.com/search?q=Waverley+Motors+Invercargill+reviews" target="_blank" rel="noopener">Leave a Review</a>
         <a href="terms.html">Terms &amp; Conditions</a>
         <a href="privacy.html">Privacy Policy</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Waverley Motors 2026 Ltd · Invercargill, Southland</span>
+      <span>© 2026 Waverley Motors 2026 Ltd · 46 Ward Street, Waverley, Invercargill 9810</span>
       <span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span>
     </div>
   </div>

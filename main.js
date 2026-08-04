@@ -4,10 +4,10 @@
   var intro = document.querySelector('.intro');
   if (intro) {
     window.addEventListener('load', function () {
-      setTimeout(function () { intro.classList.add('done'); }, 1150);
+      setTimeout(function () { intro.classList.add('done'); }, 1800);
     });
     // safety fallback
-    setTimeout(function () { intro.classList.add('done'); }, 2600);
+    setTimeout(function () { intro.classList.add('done'); }, 3200);
   }
 
   // Nav scroll state
@@ -30,6 +30,33 @@
       i = (i + 1) % slides.length;
       slides[i].classList.add('active');
     }, 5500);
+  }
+
+  // Rotating hero review
+  var hrQuote = document.getElementById('hrQuote');
+  var hrName = document.getElementById('hrName');
+  var heroReview = document.getElementById('heroReview');
+  if (hrQuote && hrName && heroReview) {
+    var reviews = [
+      { q: '"The BEST in Invercargill. Friendly, honest and go the extra mile to help their customer. Fair pricing. Highly recommended!"', n: 'Gonz Hipo · Google review' },
+      { q: '"Best WOF place in Invercargill. We have taken our vehicles here for years and always had good reliable service."', n: 'Cameron Corcoran · Local Guide' },
+      { q: '"Very awesome garage who tells it like it is and does not rip you off. Staff are always helpful and welcoming."', n: 'Zivana Marie Anderson · Local Guide' },
+      { q: '"Great mechanics, very fair prices, and the great customer service by Bronwyn."', n: 'Tim Macdonald · Local Guide' },
+      { q: '"Great friendly service. You can trust the team here!!"', n: 'Ollie Jackson · Local Guide' },
+      { q: '"Top notch business and staff, excellent service."', n: 'Steve Horton · Google review' },
+      { q: '"High-quality service and they always ensure customer satisfaction. Very professional. Thank you Waverley Motors!"', n: 'Ankush Saini · Google review' },
+      { q: '"Great friendly service."', n: 'William Ferris · Google review' }
+    ];
+    var ri = 0;
+    setInterval(function () {
+      ri = (ri + 1) % reviews.length;
+      heroReview.classList.add('fade');
+      setTimeout(function () {
+        hrQuote.textContent = reviews[ri].q;
+        hrName.textContent = reviews[ri].n;
+        heroReview.classList.remove('fade');
+      }, 420);
+    }, 4500);
   }
 
   // Reveal on scroll
