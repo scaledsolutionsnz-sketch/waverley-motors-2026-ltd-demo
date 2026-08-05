@@ -328,13 +328,9 @@ p{margin:0 0 1rem}
 /* Keep hero H1 white for legibility, with green highlight span already set */
 
 /* ===== MTA approved badge on hero (right of the Call button) ===== */
-.hero-mta{
-  height:60px;width:auto;align-self:center;
-  background:#fff;border-radius:12px;padding:6px 9px;
-  box-shadow:0 14px 30px -14px rgba(0,0,0,.6);
-}
+.nav-mta{height:40px;width:auto;display:block;flex:0 0 auto}
 @media(max-width:760px){
-  .hero-mta{height:52px}
+  .nav-mta{height:34px}
 }
 
 /* ===== Online booking embed ===== */
