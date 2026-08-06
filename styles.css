@@ -2,12 +2,12 @@
    Fonts: Space Grotesk (display) + IBM Plex Sans (body) */
 
 :root{
-  --bg:#0b1220;          /* deep navy anchor */
-  --bg-2:#0f1a30;
-  --panel:#111f38;
+  --bg:#131418;          /* charcoal anchor */
+  --bg-2:#1c1d22;
+  --panel:#24262c;
   --bone:#f3f1ea;        /* warm light band */
   --light:#f7f8fa;       /* cool light band */
-  --ink:#0c1424;
+  --ink:#141519;
   --muted:#5a6577;
   --line:#e4e6ea;
   --line-dk:rgba(255,255,255,.10);
@@ -17,7 +17,7 @@
   --accent-ink:#2f6a12;  /* readable green for light/bone headings */
   --radius:16px;
   --radius-sm:11px;
-  --shadow:0 24px 60px -28px rgba(9,15,28,.55);
+  --shadow:0 24px 60px -28px rgba(0,0,0,.55);
   --maxw:1180px;
   --ease:cubic-bezier(.22,.61,.36,1);
 }
@@ -68,7 +68,7 @@ p{margin:0 0 1rem}
 .btn--ghost{background:transparent;border-color:rgba(255,255,255,.28);color:#fff}
 .btn--ghost:hover{border-color:#fff;background:rgba(255,255,255,.06)}
 .btn--dark{background:var(--ink);color:#fff}
-.btn--dark:hover{background:#1d2c48}
+.btn--dark:hover{background:#26282f}
 .btn--lg{padding:1.15rem 2.1rem;font-size:1.05rem}
 
 /* Nav */
@@ -78,7 +78,7 @@ p{margin:0 0 1rem}
   padding:18px clamp(20px,5vw,40px);
   transition:background .35s var(--ease),padding .35s var(--ease),box-shadow .35s;
 }
-.nav.scrolled{background:rgba(11,18,32,.92);backdrop-filter:blur(12px);padding:12px clamp(20px,5vw,40px);box-shadow:0 10px 30px -18px rgba(0,0,0,.7)}
+.nav.scrolled{background:rgba(19,20,24,.92);backdrop-filter:blur(12px);padding:12px clamp(20px,5vw,40px);box-shadow:0 10px 30px -18px rgba(0,0,0,.7)}
 .brand{display:flex;align-items:center;gap:.65rem;color:#fff;font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:1.18rem;letter-spacing:-.01em}
 .brand .mark{
   width:38px;height:38px;border-radius:10px;display:grid;place-items:center;
@@ -108,7 +108,7 @@ p{margin:0 0 1rem}
 @keyframes kenburns{from{transform:scale(1.08)}to{transform:scale(1)}}
 .hero::after{
   content:"";position:absolute;inset:0;z-index:1;
-  background:linear-gradient(180deg,rgba(11,18,32,.55) 0%,rgba(11,18,32,.45) 40%,rgba(11,18,32,.9) 100%);
+  background:linear-gradient(180deg,rgba(19,20,24,.55) 0%,rgba(19,20,24,.45) 40%,rgba(19,20,24,.9) 100%);
 }
 .hero-inner{position:relative;z-index:2;width:100%;padding-bottom:clamp(60px,9vw,120px);padding-top:140px}
 .hero .eyebrow{color:var(--accent-2)}
@@ -168,7 +168,7 @@ p{margin:0 0 1rem}
 /* Crew */
 .crew-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .crew-card{background:var(--panel);border:1px solid var(--line-dk);border-radius:var(--radius);padding:30px 24px;text-align:center;transition:transform .35s var(--ease),background .35s}
-.crew-card:hover{transform:translateY(-6px);background:#152541}
+.crew-card:hover{transform:translateY(-6px);background:#24262c}
 .avatar{width:74px;height:74px;border-radius:50%;margin:0 auto 16px;display:grid;place-items:center;background:var(--bg);color:var(--accent-2);font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:1.5rem;border:2px solid var(--accent)}
 .crew-card h3{color:#fff;font-size:1.14rem}
 .crew-card .role{color:var(--accent-2);font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;margin:6px 0 12px;font-weight:600}
@@ -199,7 +199,7 @@ p{margin:0 0 1rem}
 @media(max-width:520px){.gallery{column-count:1}}
 
 /* Review funnel banner */
-.funnel{background:linear-gradient(120deg,#0b1220,#152742);color:#fff;text-align:center;position:relative;overflow:hidden}
+.funnel{background:linear-gradient(120deg,#131418,#26282f);color:#fff;text-align:center;position:relative;overflow:hidden}
 .funnel::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(111,181,44,.22),transparent 55%)}
 .funnel .wrap{position:relative;z-index:1}
 .funnel .stars{font-size:2rem;letter-spacing:6px;color:var(--accent-2);margin-bottom:14px}
@@ -224,7 +224,7 @@ p{margin:0 0 1rem}
 @media(max-width:840px){.contact-grid{grid-template-columns:1fr}}
 
 /* Footer */
-.footer{background:#070d18;color:#c4cddb;padding:64px 0 28px}
+.footer{background:#0b0c0e;color:#c4cddb;padding:64px 0 28px}
 .footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid var(--line-dk)}
 .footer h4{color:#fff;font-size:1rem;margin-bottom:16px;font-family:"Space Grotesk",sans-serif}
 .footer a{display:block;color:#93a1b6;font-size:.93rem;margin-bottom:10px;transition:color .2s}
@@ -277,7 +277,7 @@ p{margin:0 0 1rem}
 .hero-review{
   position:absolute; z-index:3; top:150px; right:0;
   width:340px; max-width:36vw;
-  background:rgba(11,18,32,.68); backdrop-filter:blur(12px);
+  background:rgba(19,20,24,.68); backdrop-filter:blur(12px);
   border:1px solid rgba(255,255,255,.16); border-radius:16px; padding:20px 22px;
   color:#fff; box-shadow:0 26px 60px -28px rgba(0,0,0,.8);
 }
